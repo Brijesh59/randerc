@@ -227,7 +227,8 @@ div#preloader {
     padding: 110px 0px 80px;
 }
 .section-headline {
-    padding-bottom: 40px;
+    font-size: 16px;
+    /* padding-bottom: 40px; */
     position: relative;
 }
 .section-headline h3 {
@@ -646,15 +647,21 @@ div#preloader {
     left: 0;
     width: 100%;
     height: auto;
-    margin-top: -110px;
+    margin-top: -130px;
 }
 .title1 {
     font-weight: 500;
     font-size: 18px;
+    margin-bottom: 20px;
+    display: block;
+}
+/* .title2 {
+    font-weight: 500;
+    font-size: 16px;
     color: #3078fb;
     margin-bottom: 20px;
-    display: inline-block;
-}
+    display: block;
+} */
 .layer-2 p {
     font-size: 19px;
     line-height: 30px;
@@ -665,7 +672,7 @@ div#preloader {
     font-size: 54px;
     font-weight: 600;
     line-height: 64px;
-    max-width: 700px;
+    /* max-width: 700px; */
     margin-bottom: 20px;
     text-transform: capitalize;
 }
@@ -716,7 +723,7 @@ div#preloader {
     position: relative;
 }
 .all-services{
-	margin-top:-30px;
+	/* margin-top:-30px; */
 }
 .well-services{
     width: 33.33%;
@@ -802,19 +809,20 @@ div#preloader {
 /*  5. About area
 /*----------------------------------------*/
 .about-2 {
-    background: url(img/background/ag1.jpg);
+    /* background: url(img/background/ag1.jpg); */
+    margin-top: 50px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
     background-attachment: scroll;
 }
 .about-content {
-    background: #062241;
+    /* background: #062241; */
     padding: 100px 70px 100px 100px;
     overflow: hidden;
 }
 .about-content p {
-    color: #ddd;
+    /* color: #ddd; */
     font-size: 16px;
 }
 .about-company {
@@ -829,7 +837,7 @@ div#preloader {
 .about-text {
     font-size: 16px;
     font-weight: 300;
-    color: #fff;
+    /* color: #fff; */
     line-height: 26px;
     position: relative;
     padding-left: 30px;
@@ -839,7 +847,8 @@ div#preloader {
 .about-text::before {
     position: absolute;
     content: "";
-    border: 1px solid #fff;
+    border: 1px solid green;
+    background-color: green;
     left: 0;
     top: 8px;
     width: 10px;
@@ -850,6 +859,7 @@ div#preloader {
     position: relative;
     width: 100%;
     height: 100%;
+    /* background-color: red; */
     min-height: 510px;
 }
 .video-content {
@@ -898,7 +908,7 @@ div#preloader {
     z-index: 1;
     background: #fff;
     text-align: left;
-    padding: 40px 30px;
+    padding: 35px 30px;
     position: relative;
     overflow: hidden;
     border-radius: 2px;
@@ -906,8 +916,7 @@ div#preloader {
     position: relative;
     box-shadow: none;
     text-align: left;
-    padding: 40px 40px;
-    border: 1px solid rgba(48,120,251,0.4);
+    border: 2px solid#323844;
 }
 .single-service::after{
     position: absolute;
@@ -1246,8 +1255,9 @@ div#preloader {
 ----------------------------------------*/
 .quote-area {
 	height: auto;
-	width: 100%;
-    background: #062241;
+    width: 100%;
+    background: #f2f2f2;
+    /* background: #062241; */
 }
 .quote-area #contactForm input {
     border: none;
@@ -3240,7 +3250,12 @@ span.email-notes{
 /*--------------------------------*/
 
 /* Custom CSS */
-
+.about-section-image{
+    margin-top: 100px;
+}
+.center{
+    text-align: center;
+}
 .hidden{
     display: none;
 }
