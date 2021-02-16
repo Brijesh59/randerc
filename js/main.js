@@ -274,8 +274,43 @@ windows.on('scroll', function() {
         Services Tab
 	------------------------------ */
 	const selector = '.left-menu li';
+	const current = location.hash;
+	
+	function scrollToTargetAdjusted(el, offset){
+		var element = document.getElementById(el);
+		if(!element) return
+    var headerOffset = offset;
+    var elementPosition = element.getBoundingClientRect().top;
+    var offsetPosition = elementPosition - headerOffset;
+
+    window.scrollTo({
+			top: offsetPosition,
+			behavior: "smooth"
+    });
+	}
+
+	$('.left-menu li a').each(function(index){
+		var $this = $(this);
+		const $parent = $this.closest('li')
+
+		if($this.attr('href') === current.replace('%20', ' ')){
+			// document.getElementById(current.replace('%20', ' ')).scrollIntoView();
+			const offset = 250 + index*25
+			scrollToTargetAdjusted(current.replace('%20', " "), offset)
+			// $('html, body').animate({
+      //   scrollTop: parseInt($("#DevOps-As-A-Service").offset().top)
+    	// }, 1000);
+
+			$(selector).removeClass('active');
+			$parent.addClass('active');
+			const serviceDetails = '.service-details-section div';
+			$(serviceDetails).removeClass('visible');
+			$(`.service-details-section div:nth-child(${$($parent).index() + 1})`).addClass('visible')
+		}
+	})
 
 	$(selector).on('click', function(){
+
 		$(selector).removeClass('active');
 		$(this).addClass('active');
 
