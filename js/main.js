@@ -319,5 +319,27 @@ windows.on('scroll', function() {
 		$(`.service-details-section div:nth-child(${$(this).index() + 1})`).addClass('visible')
 	});
 
+	var sync1 = $(".owl-carousel");
+
+  sync1.owlCarousel({
+    items : 1,
+    slideSpeed : 500,
+		nav: true,
+		dots:false,
+    autoplay: true,
+    loop: true,
+    responsiveRefreshRate : 50,
+    navText: ['',''],
+  });
 
 })(jQuery); 
+
+
+function submitForm(event){
+	const name = $('#name').val()
+	const email = $('#email').val()
+	const subject = $('#subject').val()
+	const message = $('#message').val()
+
+	console.log(name, email, subject, message)
+}
