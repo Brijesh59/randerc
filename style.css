@@ -3269,7 +3269,8 @@ span.email-notes{
 
 /* Custom CSS */
 .about-section-image{
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    margin-left: 70px;
 }
 .center{
     text-align: center;
@@ -3279,4 +3280,15 @@ span.email-notes{
 }
 .visible{
     display: block !important;
+}
+
+.flaticon-web::before{
+    content: url(img/icon/web-colored.svg);
+    max-width: 50px;
+    /* background:  !important; */
+}
+
+.flaticon-web:hover::before{
+    content: url(img/icon/web.svg);
+    /* background:  !important; */
 }
