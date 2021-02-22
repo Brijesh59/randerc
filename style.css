@@ -446,7 +446,7 @@ div#preloader {
     color:#3078fb;
 }
 .header-right-link {
-    float: right;
+    float: left;
     width: 200px;
     padding: 30px 0px;
     margin-left: 70px;
@@ -1683,7 +1683,7 @@ box-shadow: 3px 3px 21px -8px rgba(0, 0, 0, 0.4);
     border-radius: 3px;
 }
 .suscribe-input {
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1); */
 }
 .suscribe-input input {
     background: transparent;
@@ -2742,6 +2742,7 @@ span.email-notes{
 }
 .build-img .page-img {
     padding-bottom: 0;
+    /* border: 5px solid red; */
 }
 .left-menu ul li.active a {
     color: #3078fb;
@@ -3282,13 +3283,49 @@ span.email-notes{
     display: block !important;
 }
 
-.flaticon-web::before{
-    content: url(img/icon/web-colored.svg);
-    max-width: 50px;
-    /* background:  !important; */
+
+.sync1 .item {
+    margin: 5px;
+    color: #FFF;
+    border-radius: 3px;
+    text-align: center;
+  }
+  .sync2 .item {
+    background: #C9C9C9;
+    padding: 10px 0px;
+    margin: 5px;
+    color: #FFF;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .owl-theme .owl-nav [class*='owl-'] {
+    transition: all 0.3s ease;
+  }
+  .owl-theme .owl-nav [class*='owl-'].disabled:hover {
+    background-color: #D6D6D6;
+  }
+  .sync1.owl-theme {
+    position: relative;
+  }
+
+
+.contact-us{
+    background: url(img/header/contact-us.jpg) !important;
+    background-size: cover !important;
+    /* background-position: cover !important; */
+    background-repeat: no-repeat !important;
 }
 
-.flaticon-web:hover::before{
-    content: url(img/icon/web.svg);
-    /* background:  !important; */
+.faq{
+    background: url(img/header/faq.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.reviews{
+    background: url(img/header/reviews.jpg) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
