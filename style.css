@@ -3317,6 +3317,18 @@ span.email-notes{
     background-repeat: no-repeat !important;
 }
 
+.team-page-area{
+    background: url(img/header/team.jpg) !important;
+    background-size: cover !important;
+}
+
+.services-page-area{
+    background: url(img/header/services.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
 .faq{
     background: url(img/header/faq.jpg) !important;
     background-size: cover !important;
