@@ -233,7 +233,7 @@ div#preloader {
 }
 .section-headline h3 {
     font-size: 34px;
-    max-width: 500px;
+    /* max-width: 800px; */
     line-height: 40px;
     margin: 0px auto 15px;
     font-weight: 500;
@@ -1036,7 +1036,7 @@ box-shadow: 3px 3px 21px -8px rgba(0, 0, 0, 0.4);
 /* 8. banner area css
 /*----------------------------------------*/
 .banner-area{
-   background: rgba(0, 0, 0, 0) url(img/background/bg2.jpg) no-repeat scroll center center / cover;
+   background: rgba(0, 0, 0, 0) url(img/background/map.jpg) no-repeat scroll center center / cover;
     position: relative;
 }
 .banner-area:before{
@@ -1061,12 +1061,13 @@ box-shadow: 3px 3px 21px -8px rgba(0, 0, 0, 0.4);
 }
 .add-contact {
     float: left;
+    margin-top: 20px;
 }
 .call-us {
     display: block;
     color: #fff;
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .call-us i {
     width: 50px;
@@ -1167,26 +1168,10 @@ box-shadow: 3px 3px 21px -8px rgba(0, 0, 0, 0.4);
     text-decoration: none;
     text-transform: capitalize;
     margin-bottom: 5px;
-    cursor: pointer;
+    /* cursor: pointer; */
     position: relative;
 }
-.project-dec h4::after {
-    position: absolute;
-    content: "\e628";
-    right: 40px;
-    top: 0px;
-    font-family: themify;
-    font-size: 18px;
-    width: 46px;
-    height: 30px;
-    border: 1px solid #3078fb;
-    background: #3078fb;
-    color: #fff;
-    text-align: center;
-    line-height: 27px;
-    opacity: 0;
-    transition: 0.5s;
-}
+
 .single-awesome-project:hover .project-dec h4::after {
     right: 0px;
     opacity: 1;
@@ -1201,57 +1186,7 @@ box-shadow: 3px 3px 21px -8px rgba(0, 0, 0, 0.4);
 .single-awesome-project:hover .project-dec h4 {
     color:#3078fb;
 }
-.project-carousel.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-prev, 
-.project-carousel.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next {
-    color: #fff;
-    font-size: 18px;
-    margin-top: -20px;
-    position: absolute;
-    top: 50%;;
-    text-align: center;
-    line-height: 39px;
-    opacity: 0;
-    border:1px solid #fff;
-    width: 40px;
-    height: 40px;
-	border-radius: 50%;
-}
-.project-carousel.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-prev{
-    left: 10%;
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -o-transition: 0.4s;
-    -ms-transition: 0.4s;
-}
-.project-carousel.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next {
-    right: 10%;
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -o-transition: 0.4s;
-    -ms-transition: 0.4s;
-}
-.project-carousel.owl-carousel.owl-theme:hover .owl-controls .owl-nav div.owl-next{
-    right: 2%;
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -o-transition: 0.4s;
-    -ms-transition: 0.4s;
-    opacity: 1;
-}
-.project-carousel.owl-carousel.owl-theme:hover .owl-controls .owl-nav div.owl-prev{
-    left: 2%;
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -o-transition: 0.4s;
-    -ms-transition: 0.4s;
-    opacity: 1;
-}
-.project-carousel.owl-carousel.owl-theme:hover .owl-controls .owl-nav div.owl-next:hover,
-.project-carousel.owl-carousel.owl-theme:hover .owl-controls .owl-nav div.owl-prev:hover{
-    color:#fff;
-    background: #3078fb;
-    border: 1px solid #3078fb;
-}
+
 /*----------------------------------------
  10. Quote Area
 ----------------------------------------*/
@@ -1612,7 +1547,7 @@ box-shadow: 3px 3px 21px -8px rgba(0, 0, 0, 0.4);
 /*----------------------------------------*/
 .footer-area {
     padding: 90px 0;
-    background: #fdfcfc;
+    background: #eee;
 }
 .footer-logo {
     margin-bottom: 20px;
@@ -2771,6 +2706,41 @@ span.email-notes{
     width: 3px;
     height: 100%;
 }
+
+
+.left-menu2 li {
+    display: block;
+	margin: 2px 0px
+}
+.left-menu2 ul li.active a {
+    color: #3078fb;
+    position: relative;
+}
+.left-menu2 ul li a:hover {
+    color: #3078fb;
+}
+.left-menu2 ul li a {
+    color: #333;
+    display: block;
+    font-size: 16px;
+    padding: 13px 20px;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    background: #f4f4f4;
+}
+.left-menu2 ul li a:hover::after,
+.left-menu2 ul li.active a::after{
+	position: absolute;
+    right: 0;
+    top: 0px;
+    background: #3078fb;
+    content: "";
+    width: 3px;
+    height: 100%;
+}
+
+
 .down-btn i {
     font-size: 24px;
     float: right;
@@ -3313,13 +3283,20 @@ span.email-notes{
 .contact-us{
     background: url(img/header/contact-us.jpg) !important;
     background-size: cover !important;
-    /* background-position: cover !important; */
+    background-position: center !important;
     background-repeat: no-repeat !important;
 }
 
 .team-page-area{
     background: url(img/header/team.jpg) !important;
     background-size: cover !important;
+}
+
+.why-join-us{ 
+    background: url(img/header/why-join-us.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 
 .services-page-area{
@@ -3340,4 +3317,22 @@ span.email-notes{
     background: url(img/header/reviews.jpg) !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
+}
+
+select {
+    font-size: 100%;
+    padding: 10px;
+    padding-right: 180px;
+    /* margin-left: 30px; */
+    border-radius: 1000000px;
+    /* border: 1px solid #707070; */
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='34' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+    /* margin-right: 2rem; */
 }
