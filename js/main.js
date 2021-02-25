@@ -320,6 +320,9 @@ windows.on('scroll', function() {
 	});
 
 	var sync1 = $(".owl-carousel");
+	var sync2 = $(".owl-carousel2"); 
+	var intro_slider = $(".intro-slider"); 
+	// var intro_carousel = $(".intro-carousel-custom");
 
   sync1.owlCarousel({
     items : 1,
@@ -330,7 +333,31 @@ windows.on('scroll', function() {
     loop: true,
     responsiveRefreshRate : 50,
     navText: ['',''],
-  });
+	});
+
+	sync2.owlCarousel({
+    items : 1,
+    slideSpeed : 500,
+		nav: true,
+		dots:false,
+    autoplay: true,
+    loop: true,
+    responsiveRefreshRate : 50,
+    navText: ['',''],
+	});
+
+	intro_slider.owlCarousel({
+    items : 1,
+    slideSpeed : 500,
+		nav: true,
+		dots:false,
+    autoplay: true,
+    loop: true,
+    responsiveRefreshRate : 50,
+    navText: ['',''],
+	});
+	
+
 
 })(jQuery); 
 
