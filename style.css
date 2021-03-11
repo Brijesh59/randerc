@@ -659,6 +659,7 @@ div#preloader {
     color: #3078fb;
     margin-bottom: 20px;
     display: block; */
+    text-transform: none;
     margin-top: -80px;
 }
 .layer-2 p {
@@ -3434,4 +3435,30 @@ select {
 
 .color {
     color: #3078fb !important;
+}
+
+
+.outer-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.inner-container {
+    display: inline-block;
+    position: relative;
+}
+.video-overlay {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    
+    padding: 5px 5px;
+    font-size: 20px;
+    font-family: Helvetica;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+video {
+    width: 100%;
+    height: 100%;
 }

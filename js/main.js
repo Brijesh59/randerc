@@ -270,9 +270,15 @@ windows.on('scroll', function() {
 		$("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 	}
     
-    /*----------------------------
-        Services Tab
+  /*----------------------------
+   Services Tab
 	------------------------------ */
+
+	setTimeout(() => {
+		// $('#exampleModal').modal()
+	}, 2000)
+
+
 	const selector = '.left-menu li';
 	const current = location.hash;
 	
@@ -369,4 +375,16 @@ function submitForm(event){
 	const message = $('#message').val()
 
 	console.log(name, email, subject, message)
+}
+
+function scrollToKnowMore(){
+	var element = document.getElementById('know-more');
+	var headerOffset = 105;
+	var elementPosition = element.getBoundingClientRect().top;
+	var offsetPosition = elementPosition - headerOffset;
+
+	window.scrollTo({
+		top: offsetPosition,
+		behavior: "smooth"
+	});
 }

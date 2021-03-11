@@ -99,13 +99,13 @@
 												<ul class="sub-menu">
 													<li><a href="service.html#Application Engineering">Application Engineering</a></li>
                                                     <li><a href="service.html#Technology consulting">Technology consulting</a></li>
-                                                    <li><a href="service.html#Testing-as-a-Service">Software Testing</a></li>
+                                                    <li><a href="service.html#Testing-as-a-Service">Testing-as-a-Service</a></li>
                                                     <li><a href="service.html#Web development">Web development</a></li>
                                                     <li><a href="service.html#Mobile development">Mobile development</a></li>
-                                                    <li><a href="service.html#DevOps-as-a-service">DevOps Services</a></li>
+                                                    <li><a href="service.html#DevOps-as-a-service">DevOps-as-a-service</a></li>
 												</ul>
 											</li>
-											<li><a class="pages" href="#">Careers</a>
+											<li><a class="pages" href="#">Carrier</a>
 												<ul class="sub-menu">
                                                     <li><a href="why-join-us.html">Why join us?</a></li>
 												    <li><a href="project.html">Current Openings</a></li>
@@ -161,13 +161,13 @@
                                             <ul class="sub-menu">
                                                 <li><a href="service.html#Application Engineering">Application Engineering</a></li>
                                                 <li><a href="service.html#Technology consulting">Technology consulting</a></li>
-                                                <li><a href="service.html#Testing-as-a-Service">Software Testing</a></li>
+                                                <li><a href="service.html#Testing-as-a-Service">Testing-as-a-Service</a></li>
                                                 <li><a href="service.html#Web development">Web development</a></li>
                                                 <li><a href="service.html#Mobile development">Mobile development</a></li>
-                                                <li><a href="service.html#DevOps-as-a-service">DevOps Services</a></li>
+                                                <li><a href="service.html#DevOps-as-a-service">DevOps-as-a-service</a></li>
                                             </ul>
                                         </li>
-                                        <li><a class="pages" href="#">Careers</a>
+                                        <li><a class="pages" href="#">Carrier</a>
                                             <ul class="sub-menu">
                                                 <li><a href="why-join-us.html">Why join us?</a></li>
                                                 <li><a href="project.html">Current Openings</a></li>
@@ -217,33 +217,19 @@
         </div> -->
         
         <div class="intro-area-2">
-            <div class="intro-slider ">
-                <div class="intro-content-2">
-                    <div class="slider-images">
-                        <img src="img/background/hero-image.jpeg" alt="">
-                    </div>
-                    <div class="slider-content">
-                        <div class="container">
-                            <div class="row" style="min-width: 100%;">
-                                <div class="col-md-12" style="min-width: 100%;">
-                                    <!-- layer 1 -->
-                                    <div class="layer-1 wow fadeInUp center" data-wow-delay="0.3s">
-                                        <!-- <div class="title1"></div> -->
-                                        <h3 class="title2">
-                                            Transforming Businesses using 
-                                            <div class="color"> Technology </div>
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="intro-sliderr">
                 <div class="intro-content-2 slide-2 ">
-                    <div class="slider-images">
-                        <img src="img/background/hero-image.jpeg" alt="">
+                    <div>
+                        <video  
+                            width="100%" 
+                           
+                            src="video/hero-video.mp4" 
+                            autoplay
+                            loop
+                            
+                        />
                     </div>
-                    <div class="slider-content">
+                    <div class="slider-content" style="margin-top: 20px;">
                         <div class="display-table">
                             <div class="display-table-cell">
                                 <div class="container">
@@ -251,18 +237,24 @@
                                          <div class="col-md-12">
                                             <!-- layer 1 -->
                                             <div class="layer-1 wow fadeInUp color" data-wow-delay="0.3s">
-                                                <h2 class="title2">Transform your business using
-                                                    <span class="color">technology.</span>
+                                                <h2 class="title2" style="text-transform: none;">
+                                                    <span  style="background: rgba(0,0,28,0.2);color: #151B2C">
+                                                        Transform your business using
+                                                    </span>
+                                                    <span
+                                                    style="background: linear-gradient(to bottom, rgba(255,255,255,0) 0, rgba(255,255,255,0) 48%, rgba(255,255,255,0) 50%, #00ABFB 52%, #00ABFB 100%);color: #151B2C">
+                                                    technology
+                                                    </span>
                                                 </h2>
                                             </div>
                                             <!-- layer 2 -->
-                                            <div class="layer-2 wow fadeInUp" data-wow-delay="0.5s">
-                                                <p>We help you outperform the competition right using right technology.</p>
+                                            <div class="layer-2 wow fadeInUp" data-wow-delay="0.5s" > 
+                                                <p style="color: #fff">We help you outperform the competition using right technology.</p>
                                             </div>
                                             <!-- layer 3 -->
                                             <div class="layer-3 wow fadeInUp" data-wow-delay="0.7s">
-                                                <a href="#" class="ready-btn left-btn " >Our Services</a>
-                                                <a href="#" class="ready-btn right-btn">Contact us</a>
+                                                <a onclick="scrollToKnowMore()" class="ready-btn left-btn " >Know More</a>
+                                                <a href="contact.html" class="ready-btn right-btn">Contact us</a>
                                             </div>
                                         </div>
                                     </div>
@@ -274,10 +266,35 @@
             </div>
         </div>
         <!-- End Intro Area -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content" style="position: relative;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute;background-color: #2F77FB;z-index: 1000;width:30px;height:30px;border-radius: 15px;right:-10px;top:-10px;opacity: 1;">
+                    <svg style="margin-top:2px;" fill="#fff" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><g data-name="close"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><path d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"/></g></g></svg>
+                </button>
+                <div class="modal-body">
+                
+                    <a href="sentinal.html">
+                        <img src="img/certificate.png" style="max-height: 500px;"/>
+                    </a>
+
+                </div>
+               
+            </div>
+            </div>
+        </div>
+
+
+        <!--  -->
         <!-- Welcome service area start -->
-        <div class="welcome-area fix" >
+
+
+        
+        <div class="welcome-area fix" style="margin-top: 30px;" id="know-more">
             <div class="container">
-                <div class="section-headline text-center">
+                <div class="section-headline text-center" >
                     <h3>Reasons to choose us as your technology partner</h3>
                 </div>
                 <div class="row">
@@ -369,6 +386,9 @@
                                     <span class="about-text">24X7 support</span>
                                 </div>
                             </div>
+                            <a href="contact.html" class="ready-btn left-btn">
+                                Get in touch
+                            </a>
                         </div>
                     </div>
                     <!-- column end -->
@@ -548,8 +568,9 @@
         <!-- Start Team Banner area -->
         <div class="banner-area fix area-padding">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" > 
+                    <!-- style="display:flex;align-items: center;"> -->
+                    <div class="col-md-8 col-sm-12 col-xs-12">
                         <div class="add-content">
                             <h3>Brainstack Technologies has been serving its global clients since 2016</h3>
                             <div class="add-contact">
@@ -557,7 +578,13 @@
                                 <span class="call-us mail-us">
                                 Email: info@brainstacktechnologies.com</span>
                             </div>
+                            
                         </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12" >
+                        <a href="contact.html" class="ready-btn left-btn" style="text-transform: none;" >
+                            Get a free consultation
+                        </a>
                     </div>
                 </div>
             </div>
